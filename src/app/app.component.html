@@ -45,10 +45,22 @@
       <nz-breadcrumb>
         <nz-breadcrumb-item>Projects</nz-breadcrumb-item>
       </nz-breadcrumb>
-      <div class="inner-content"></div>
+      <div class="inner-content">
+        <div nz-row>
+          <div nz-col [nzXs]="{ span: 5, offset: 1 }" [nzLg]="{ span: 6, offset: 2 }">
+            <card></card>
+          </div>
+          <div nz-col [nzXs]="{ span: 11, offset: 1 }" [nzLg]="{ span: 6, offset: 2 }">
+            <card></card>
+          </div>
+          <div nz-col [nzXs]="{ span: 5, offset: 1 }" [nzLg]="{ span: 6, offset: 2 }">
+            <card></card>
+          </div>
+        </div>
+      </div>
     </nz-content>
     <nz-footer
-      >© All rights reserved Made with ❤ by
+      >© All rights reserved. Made with ❤ by
       <a href="https://github.com/TheGreatestHackers"
         >TheGreatestHackers</a
       ></nz-footer

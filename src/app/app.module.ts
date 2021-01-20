@@ -17,6 +17,8 @@ import { NgZorroAntdModule } from "./ng-zorro-antd.module";
 
 import { NzLayoutCustomTriggerComponent } from "./app.component";
 
+import { CardComponent } from "./core/components/card/card.component";
+
 registerLocaleData(en);
 
 const antDesignIcons = AllIcons as {
@@ -38,7 +40,7 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons).map(
     ScrollingModule,
     DragDropModule
   ],
-  declarations: [NzLayoutCustomTriggerComponent],
+  declarations: [NzLayoutCustomTriggerComponent, CardComponent],
   bootstrap: [NzLayoutCustomTriggerComponent],
   providers: [
     { provide: NZ_I18N, useValue: en_US },
